@@ -1,6 +1,5 @@
 #!/bin/sh
 
-brew install coreutils           # command line utilities
 brew install multimarkdown
 brew install node
 brew install wget

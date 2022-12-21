@@ -26,7 +26,6 @@ export PS1="[\[$promptcolor\]\u@\h\[$reset\]:\W] "
 export LANG=en_US.UTF-8
 export EDITOR=vim
 export PATH=~/.local/bin:$PATH
-export PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH
 export PATH=/usr/local/opt/openjdk/bin:$PATH
 export NODE_PATH=/usr/local/lib/node_modules
 
