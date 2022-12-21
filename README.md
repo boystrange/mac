@@ -119,6 +119,10 @@ and reopen.
 2. Viewing
    * **Enable** Show most recent message at the top
 
+Change the "Today" smart mailbox so that only messages **received** today (and
+not messages **viewed** today) are shown. Change all the smart mailboxes so
+that messages from the Sent mailbox are included.
+
 ## POSSIBLY OUTDATED
 
 ## Ruby Gems
