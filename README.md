@@ -5,34 +5,27 @@ This is how I set up my Macs.
 ## Bootstrap
 
 1. Install **[Homebrew](https://brew.sh)**
-
-``` bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-
-1. Clone **repository**
-
-```bash
-mkdir GIT && cd GIT
-git clone git@github.com:boystrange/mac.git
-cd mac/scripts
-```
-
-1. Copy **SSH** keys into `~/.ssh` and set up permissions.
-
-``` bash
-./ssh.sh
-```
-
-1. Create **symbolic links** to configuration files
-
-``` bash
-./links.sh
-```
+   ``` bash
+   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+   ```
+2. Clone **this repository**
+   ```bash
+   mkdir GIT && cd GIT
+   git clone git@github.com:boystrange/mac.git
+   cd mac/scripts
+   ```
+3. Copy **SSH** keys into `~/.ssh` and set up permissions.
+   ``` bash
+   ./ssh.sh
+   ```
+4. Create **symbolic links** to configuration files
+   ``` bash
+   ./links.sh
+   ```
 
 ## Default Shell
 
-1. If not available install `bash`.
+1. Install `bash` if not available.
    ``` bash
    brew install bash
    ```
