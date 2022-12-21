@@ -96,8 +96,18 @@ and reopen.
 
 ## Safari Preferences
 
-1. Advanced > Show Develop menu in menu bar
-2. Preferences > Tabs > disable `CMD-n` for tab switch
+1. Tabs > disable `CMD-n` for tab switch
+2. Extensions > enable Wipr Part 1/2/3
+3. Advanced > Show Develop menu in menu bar
+
+## Mail Preferences
+
+1. General
+   * New messages sound: None
+   * Disable "Play sounds for other mail actions"
+   * Disable "Prefer opening messages in Split View" when in full screen
+2. Viewing
+   * Enable "Show most recent message at the top"
 
 ## POSSIBLY OUTDATED
 
