@@ -77,10 +77,10 @@ and reopen.
 
 1. Disable Siri & Spotlight > Siri Suggestions
 2. Disable Keyboard > Keyboard Shortcuts... > Mission Control
-   * <kbd>⌃ </kbd> + <kbd>↑</kbd>
-   * <kbd>⌃ </kbd> + <kbd>↓</kbd>
+   * <kbd>⌃ Control</kbd> + <kbd>↑</kbd>
+   * <kbd>⌃ Control</kbd> + <kbd>↓</kbd>
 3. Enable Keyboard > Keyboard Shortcuts... > Mission Control
-   * Switch to Desktop 1 > <kbd>⌥ </kbd> + <kbd>1</kbd>
+   * Switch to Desktop 1 > <kbd>⌥ Option</kbd> + <kbd>1</kbd>
 4. Accessibility > Pointer Control > Trackpad Options > Use trackpad for dragging
 5. Accessibility > Display > Reduce motion
 6. Accessibility > Display > Reduce transparency
@@ -97,7 +97,7 @@ and reopen.
 
 ## Safari Preferences
 
-1. Tabs > disable <kbd>⌘ </kbd> + <kbd>n</kbd> for tab switch
+1. Tabs > disable <kbd>⌘ Command</kbd> + <kbd>n</kbd> for tab switch
 2. Extensions > enable Wipr Part 1/2/3
 3. Advanced > Show Develop menu in menu bar
 
