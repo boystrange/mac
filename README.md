@@ -1,5 +1,7 @@
 # Mac Configuration
 
+This is how I set up my Macs.
+
 ## Bootstrap
 
 1. Install **[Homebrew](https://brew.sh)**
