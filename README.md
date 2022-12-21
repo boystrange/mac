@@ -90,6 +90,7 @@ and reopen.
    * Set computer name
 8. General > Sharing
    * Enable Remote Login
+   * Enable Remote Management
 9. Displays > Night Shift... > Schedule
    * Sunset to sunrise
 
