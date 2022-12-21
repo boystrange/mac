@@ -60,33 +60,49 @@ This is how I set up my Macs.
 
 To see **leaves**: `brew leaves`
 
+## System Preferences
+
+1. General > About
+   * Set computer name
+2. General > Sharing
+   * Enable Remote Login
+   * Enable Remote Management
+3. Appearance > Show scroll bars
+   * When scrolling
+4. Accessibility > Display
+   * Enable Reduce motion
+   * Enable Reduce transparency
+5. Accessibility > Pointer Control > Trackpad Options
+   * Enable Use trackpad for dragging
+6. Control Centre
+   * Spotlight > Don't Show in Menu Bar
+   * Siri > Don't Show in Menu Bar
+7. Siri & Spotlight
+   * Disable Ask Siri
+   * Disable Spotlight > Siri Suggestions
+8. Desktop & Dock
+   * Disable Show recent applications in Dock
+9. Displays > Night Shift... > Schedule
+   * Sunset to sunrise
+10. Game Center
+   * Disable Game Center
+11. Keyboard
+   * **Fast** Key repeat rate
+   * **Short** Delay until repeat
+12. Keyboard > Press 🌐 key to
+   * Do Nothing
+13. Keyboard > Keyboard Shortcuts...
+   * Disable <kbd>⌃ Control</kbd> + <kbd>↑</kbd>
+   * Disable <kbd>⌃ Control</kbd> + <kbd>↓</kbd>
+   * Enable <kbd>⌥ Option</kbd> + <kbd>1</kbd>
+14. Keyboard > Text Input > Edit...
+   * Enable Show Input menu in menu bar
+
 ## `iTerm2` Preferences
 
 Open Preferences and enable "Load preferences from a custom folder
 or URL" setting the folder to `/Users/luca/GIT/mac`. Quit `iTerm2`
 and reopen.
-
-## System Preferences
-
-1. Disable Siri & Spotlight > Siri Suggestions
-2. Disable Keyboard > Keyboard Shortcuts... > Mission Control
-   * <kbd>⌃ Control</kbd> + <kbd>↑</kbd>
-   * <kbd>⌃ Control</kbd> + <kbd>↓</kbd>
-3. Enable Keyboard > Keyboard Shortcuts... > Mission Control
-   * Switch to Desktop 1 > <kbd>⌥ Option</kbd> + <kbd>1</kbd>
-4. Accessibility > Pointer Control > Trackpad Options > Use trackpad for dragging
-5. Accessibility > Display > Reduce motion
-6. Accessibility > Display > Reduce transparency
-7. Keyboard > Keyboard
-   * Key Repeat = FAST
-   * Delay = SHORT
-8. General > Name
-   * Set computer name
-9. General > Sharing
-   * Enable Remote Login
-   * Enable Remote Management
-10. Displays > Night Shift... > Schedule
-   * Sunset to sunrise
 
 ## Safari Preferences
 
