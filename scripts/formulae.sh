@@ -14,6 +14,7 @@ brew install poppler	         # conversion PDF => PNG (thumbnails)
 brew install iterm2
 brew install mactex
 brew install skim
+brew install firefox
 brew install google-chrome
 brew install viscosity           # VPN
 brew install webex-meetings
