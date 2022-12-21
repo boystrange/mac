@@ -10,7 +10,7 @@ This is how I set up my Macs.
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-2. Clone **repository**
+1. Clone **repository**
 
 ```bash
 mkdir GIT && cd GIT
@@ -18,13 +18,13 @@ git clone git@github.com:boystrange/mac.git
 cd mac/scripts
 ```
 
-3. Copy **SSH** keys into `~/.ssh` and set up permissions.
+1. Copy **SSH** keys into `~/.ssh` and set up permissions.
 
 ``` bash
 ./ssh.sh
 ```
 
-4. Create **symbolic links** to configuration files
+1. Create **symbolic links** to configuration files
 
 ``` bash
 ./links.sh
@@ -83,15 +83,16 @@ and reopen.
    * Switch to Desktop 1 > `ALT-1`
 4. Accessibility > Pointer Control > Trackpad Options > Use trackpad for dragging
 5. Accessibility > Display > Reduce motion
-6. Keyboard > Keyboard
+6. Accessibility > Display > Reduce transparency
+7. Keyboard > Keyboard
    * Key Repeat = FAST
    * Delay = SHORT
-7. General > Name
+8. General > Name
    * Set computer name
-8. General > Sharing
+9. General > Sharing
    * Enable Remote Login
    * Enable Remote Management
-9. Displays > Night Shift... > Schedule
+10. Displays > Night Shift... > Schedule
    * Sunset to sunrise
 
 ## Safari Preferences
