@@ -31,8 +31,7 @@ This is how I set up my Mac computers.
    ```
 2. If not listed, add `bash` to system shells.
    ``` bash
-   sudo -i
-   vim /etc/shells
+   sudo vim /etc/shells
    ```
    and add `/usr/local/bin/bash` at the bottom.
 3. Change default shell
@@ -122,23 +121,7 @@ and reopen.
 * Change all the smart mailboxes so that messages from the Sent
   mailbox are included.
 
-## POSSIBLY OUTDATED
-
-## Ruby Gems
-
-``` bash
-gem install --user-install bundler jekyll jekyll-scholar
-```
-
-If upgrade of **openssl** fails:
-
-``` bash
-gem install --user-install openssl -- --with-openssl-dir=/usr/local/opt/openssl
-```
-
-## Viscosity
-
-Look for license in mail.
+## INSTRUCTIONS TO BE UPDATED
 
 ## NPM
 
