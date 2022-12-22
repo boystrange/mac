@@ -59,63 +59,65 @@ This is how I set up my Mac computers.
 
 To see **leaves**: `brew leaves`
 
-## System Preferences
+## System Settings
 
-1. General > About
-   * **SET** computer name
+1. General > About > Name
 2. General > Sharing
-   * **ENABLE** Remote Login
-   * **ENABLE** Remote Management
-3. Appearance > Show scroll bars > **When scrolling**
+   * Remote Login > **ON**
+   * Remote Management > **ON**
+3. Appearance
+   * Accent color > **Graphite**
+   * Highlight color > **Graphite**
+   * Allow wallpaper tinting in windows > **OFF**
+   * Show scroll bars > **When scrolling**
 4. Accessibility > Display
-   * **ENABLE** Reduce motion
-   * **ENABLE** Reduce transparency
+   * Reduce motion > **ON**
+   * Reduce transparency > **ON**
 5. Accessibility > Pointer Control > Trackpad Options
-   * **ENABLE** Use trackpad for dragging
+   * Use trackpad for dragging > **ON**
 6. Control Centre
    * Spotlight > **Don't Show in Menu Bar**
    * Siri > **Don't Show in Menu Bar**
 7. Siri & Spotlight
-   * **DISABLE** Ask Siri
-   * **DISABLE** Spotlight > Siri Suggestions
+   * Ask Siri > **OFF**
+   * Spotlight > Siri Suggestions > **OFF**
 8. Desktop & Dock
-   * **DISABLE** Show recent applications in Dock
+   * Show recent applications in Dock > **OFF**
 9. Displays > Night Shift... > Schedule > **Sunset to sunrise**
-10. Game Center
-	* **DISABLE** Game Center
+10. Game Center > Game Center > **OFF**
 11. Keyboard
 	* Key repeat rate > **Fast**
 	* Delay until repeat > **Short**
 12. Keyboard > Press 🌐 key to > **Do Nothing**
 13. Keyboard > Keyboard Shortcuts... > Misson Control
-	* **DISABLE** <kbd>⌃ Control</kbd> + <kbd>↑</kbd>
-	* **DISABLE** <kbd>⌃ Control</kbd> + <kbd>↓</kbd>
-	* **ENABLE** <kbd>⌥ Option</kbd> + <kbd>1</kbd>
-14. Keyboard > Text Input > Edit...
-	* **ENABLE** Show Input menu in menu bar
+	* <kbd>⌃ Control</kbd> + <kbd>↑</kbd> > **OFF**
+	* <kbd>⌃ Control</kbd> + <kbd>↓</kbd> > **OFF**
+	* <kbd>⌥ Option</kbd> + <kbd>1</kbd> > **ON**
+14. Keyboard > Text Input > Edit... > Show Input menu in menu bar > **ON**
 
-## `iTerm2` Preferences
+## `iTerm2` Settings
 
-Open Preferences and enable "Load preferences from a custom folder
-or URL" setting the folder to `/Users/luca/GIT/mac`. Quit `iTerm2`
-and reopen.
+* Preferences > Load preferences from a custom folder or URL > **/Users/luca/GIT/mac`**  
+  Quit `iTerm2` and reopen.
 
-## Safari Preferences
+## Safari Settings
 
-1. Tabs > **DISABLE** <kbd>⌘ Command</kbd> + <kbd>n</kbd> for tab switch
-2. Extensions > **ENABLE** Wipr Part 1/2/3
-3. Advanced > **ENABLE** Show Develop menu in menu bar
+1. Tabs > <kbd>⌘ Command</kbd> + <kbd>n</kbd> for tab switch > **OFF**
+2. Extensions > Wipr Part 1/2/3 > **ON**
+3. Advanced > Show Develop menu in menu bar > **ON**
 
-## Mail Preferences
+## Mail Settings
 
 1. General
    * New messages sound > **None**
-   * **DISABLE** Play sounds for other mail actions
-   * **DISABLE** Prefer opening messages in Split View when in full screen
+   * Play sounds for other mail actions > **OFF**
+   * Prefer opening messages in Split View when in full screen > **OFF**
 2. Viewing
-   * **ENABLE** Show most recent message at the top
+   * Show most recent message at the top > **ON**
 
-* Add "All Junk", "All Trash", "All Archive" to favorite mailboxes.
+## Mail Sidebar
+
+* Add **All Junk**, **All Trash**, **All Archive** to favorite mailboxes.
 * Change the "Today" smart mailbox so that only messages
   **received** today (and not messages **viewed** today) are shown.
 * Change all the smart mailboxes so that messages from the Sent
