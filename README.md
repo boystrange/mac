@@ -1,6 +1,6 @@
-# Mac Configuration
+# Mac Computer Setup
 
-This is how I set up my Macs.
+This is how I set up my Mac computers.
 
 ## Bootstrap
 
@@ -63,40 +63,37 @@ To see **leaves**: `brew leaves`
 ## System Preferences
 
 1. General > About
-   * **Set** computer name
+   * **SET** computer name
 2. General > Sharing
-   * **Enable** Remote Login
-   * **Enable** Remote Management
-3. Appearance > Show scroll bars
-   * When scrolling
+   * **ENABLE** Remote Login
+   * **ENABLE** Remote Management
+3. Appearance > Show scroll bars > **When scrolling**
 4. Accessibility > Display
-   * **Enable** Reduce motion
-   * **Enable** Reduce transparency
+   * **ENABLE** Reduce motion
+   * **ENABLE** Reduce transparency
 5. Accessibility > Pointer Control > Trackpad Options
-   * **Enable** Use trackpad for dragging
+   * **ENABLE** Use trackpad for dragging
 6. Control Centre
-   * Spotlight > Don't Show in Menu Bar
-   * Siri > Don't Show in Menu Bar
+   * Spotlight > **Don't Show in Menu Bar**
+   * Siri > **Don't Show in Menu Bar**
 7. Siri & Spotlight
-   * **Disable** Ask Siri
-   * **Disable** Spotlight > Siri Suggestions
+   * **DISABLE** Ask Siri
+   * **DISABLE** Spotlight > Siri Suggestions
 8. Desktop & Dock
-   * **Disable** Show recent applications in Dock
-9. Displays > Night Shift... > Schedule
-   * Sunset to sunrise
+   * **DISABLE** Show recent applications in Dock
+9. Displays > Night Shift... > Schedule > **Sunset to sunrise**
 10. Game Center
-   * **Disable** Game Center
+	* **DISABLE** Game Center
 11. Keyboard
-   * **Fast** Key repeat rate
-   * **Short** Delay until repeat
-12. Keyboard > Press 🌐 key to
-   * Do Nothing
-13. Keyboard > Keyboard Shortcuts...
-   * **Disable** <kbd>⌃ Control</kbd> + <kbd>↑</kbd>
-   * **Disable** <kbd>⌃ Control</kbd> + <kbd>↓</kbd>
-   * **Enable** <kbd>⌥ Option</kbd> + <kbd>1</kbd>
+	* Key repeat rate > **Fast**
+	* Delay until repeat > **Short**
+12. Keyboard > Press 🌐 key to > **Do Nothing**
+13. Keyboard > Keyboard Shortcuts... > Misson Control
+	* **DISABLE** <kbd>⌃ Control</kbd> + <kbd>↑</kbd>
+	* **DISABLE** <kbd>⌃ Control</kbd> + <kbd>↓</kbd>
+	* **ENABLE** <kbd>⌥ Option</kbd> + <kbd>1</kbd>
 14. Keyboard > Text Input > Edit...
-   * **Enable** Show Input menu in menu bar
+	* **ENABLE** Show Input menu in menu bar
 
 ## `iTerm2` Preferences
 
@@ -106,22 +103,24 @@ and reopen.
 
 ## Safari Preferences
 
-1. Tabs > **Disable** <kbd>⌘ Command</kbd> + <kbd>n</kbd> for tab switch
-2. Extensions > **Enable** Wipr Part 1/2/3
-3. Advanced > **Enable** Show Develop menu in menu bar
+1. Tabs > **DISABLE** <kbd>⌘ Command</kbd> + <kbd>n</kbd> for tab switch
+2. Extensions > **ENABLE** Wipr Part 1/2/3
+3. Advanced > **ENABLE** Show Develop menu in menu bar
 
 ## Mail Preferences
 
 1. General
-   * New messages sound: **None**
-   * **Disable** Play sounds for other mail actions
-   * **Disable** Prefer opening messages in Split View when in full screen
+   * New messages sound > **None**
+   * **DISABLE** Play sounds for other mail actions
+   * **DISABLE** Prefer opening messages in Split View when in full screen
 2. Viewing
-   * **Enable** Show most recent message at the top
+   * **ENABLE** Show most recent message at the top
 
-Change the "Today" smart mailbox so that only messages **received** today (and
-not messages **viewed** today) are shown. Change all the smart mailboxes so
-that messages from the Sent mailbox are included.
+* Add "All Junk", "All Trash", "All Archive" to favorite mailboxes.
+* Change the "Today" smart mailbox so that only messages
+  **received** today (and not messages **viewed** today) are shown.
+* Change all the smart mailboxes so that messages from the Sent
+  mailbox are included.
 
 ## POSSIBLY OUTDATED
 
