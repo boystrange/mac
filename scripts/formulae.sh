@@ -3,6 +3,7 @@
 brew install multimarkdown
 brew install node
 brew install wget
+brew install watchexec
 brew install graphviz
 brew install ghc
 brew install cabal-install
