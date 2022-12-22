@@ -97,7 +97,7 @@ To see **leaves**: `brew leaves`
 
 ## `iTerm2` Settings
 
-* Preferences > Load preferences from a custom folder or URL > **/Users/luca/GIT/mac`**  
+* Preferences > Load preferences from a custom folder or URL > **/Users/luca/GIT/mac**  
   Quit `iTerm2` and reopen.
 
 ## Safari Settings
