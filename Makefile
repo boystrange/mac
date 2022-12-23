@@ -67,9 +67,20 @@ APPS = \
   803453959  \
   $(NULL)
 
-all: ssh links shell formulae unlink-emacs taps casks app-store
+TARGETS = \
+  ssh \
+  links \
+  shell \
+  formulae \
+  unlink-emacs \
+  taps \
+  casks \
+  apps \
+  $(NULL)
 
-ssh:
+all: $(TARGETS:%=%.done)
+
+ssh.done:
 	@echo $(PROMPT) "Setting up SSH..."
 ifndef DRY
 	@rm -rf ~/.ssh
@@ -81,49 +92,64 @@ ifndef DRY
 	@ssh-add ~/.ssh/id_rsa
 	@ssh-add --apple-use-keychain
 endif
+	@touch $@
 
-links: $(DOTFILES:%=link.%)
+links.done: $(DOTFILES:%=link.%.done)
+	@touch $@
 
-shell:
+shell.done:
 	@echo $(PROMPT) "Setting default shell to bash"
 ifndef DRY
 	@chsh -s /bin/bash
 endif
+	@touch $@
 
-formulae: $(FORMULAE:%=formula.%)
+formulae.done: $(FORMULAE:%=formula.%.done)
+	@touch $@
 
-unlink-emacs:
+unlink-emacs.done:
 	@echo $(PROMPT) "Unlinking emacs (Agda dependency) to avoid conflicts with emacs-mac"
 	@brew unlink $(BREW_DRY) emacs
+	@touch $@
 
-taps:
+taps.done:
 	@echo $(PROMPT) "Adding taps..."
 ifndef DRY
 	@brew tap railwaycat/emacsmacport
 	@brew tap homebrew/cask-fonts
 endif
+	@touch $@
 
-casks: $(CASKS:%=cask.%)
+casks.done: $(CASKS:%=cask.%.done)
+	@touch $@
 
-app-store: $(APPS:%=app.%)
+apps.done: $(APPS:%=app.%.done)
+	@touch $@
 
-link.%:
-	@echo $(PROMPT) "Linking" $(@:link.%=%) "..."
+link.%.done:
+	@echo $(PROMPT) "Linking" $(@:link.%.done=%) "..."
 ifndef DRY
 	@ln -s -f ~/GIT/mac/dotfiles/.$(@:link.%=%) ~/.
 endif
+	@touch $@
 
-formula.%:
-	@echo $(PROMPT) "Installing formula" $(@:formula.%=%) "..."
-	@brew install $(BREW_DRY) $(@:formula.%=%)
+formula.%.done:
+	@echo $(PROMPT) "Installing formula" $(@:formula.%.done=%) "..."
+	@brew install $(BREW_DRY) $(@:formula.%.done=%)
+	@touch $@
 
-cask.%:
-	@echo $(PROMPT) "Installing cask" $(@:cask.%=%) "..."
-	@brew install $(BREW_DRY) --cask $(@:cask.%=%)
+cask.%.done:
+	@echo $(PROMPT) "Installing cask" $(@:cask.%.done=%) "..."
+	@brew install $(BREW_DRY) --cask $(@:cask.%.done=%)
+	@touch $@
 
-app.%:
-	@echo $(PROMPT) "Installing app" `mas info $(@:app.%=%) | head -1` "..."
+app.%.done:
+	@echo $(PROMPT) "Installing app" `mas info $(@:app.%.done=%) | head -1` "..."
 ifndef DRY
-	@mas install $(@:app.%=%)
+	@mas install $(@:app.%.done=%)
 endif
+	@touch $@
 
+.PHONY: all clean
+clean:
+	rm -f $(TARGETS:%=%.done)
