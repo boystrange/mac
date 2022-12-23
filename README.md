@@ -22,42 +22,25 @@ This is how I set up my Mac computers.
    ``` bash
    ./links.sh
    ```
-
-## Default Shell
-
-1. Install `bash` if not available.
-   ``` bash
-   brew install bash
-   ```
-2. If not listed, add `bash` to system shells.
-   ``` bash
-   sudo vim /etc/shells
-   ```
-   and add `/usr/local/bin/bash` at the bottom.
-3. Change default shell
+5. Change default shell to Bash
    ``` bash
    chsh -s bash
    ```
 
-## Fonts
+## Homebrew Formulae
 
 ``` bash
-./fonts.sh
+./formulae.sh
 ```
+
+Tip: to see Homebrew formulae without incoming dependencies: `brew
+leaves`.
 
 ## App Store
 
 ``` bash
 ./app-store.sh
 ```
-
-## Homebrew formulae
-
-``` bash
-./formulae.sh
-```
-
-To see **leaves**: `brew leaves`
 
 ## System Settings
 
