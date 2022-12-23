@@ -57,12 +57,14 @@ DOTFILES = \
 # Whatsapp Desktop
 # Wipr
 # Notability
+# Slack for Desktop
 
 APPS = \
   747648890  \
   1147396723 \
   1320666476 \
   360593530  \
+  803453959  \
   $(NULL)
 
 all: ssh links shell formulae unlink-emacs taps casks app-store
@@ -85,7 +87,7 @@ links: $(DOTFILES:%=link.%)
 shell:
 	@echo $(PROMPT) "Setting default shell to bash"
 ifndef DRY
-	@chsh -s bash
+	@chsh -s /bin/bash
 endif
 
 formulae: $(FORMULAE:%=formula.%)

@@ -11,7 +11,7 @@ This is how I set up my Mac computers.
 2. Clone **this repository**
    ```bash
    mkdir GIT && cd GIT
-   git clone git@github.com:boystrange/mac.git
+   git clone https://github.com/boystrange/mac.git
    cd mac
    ```
 3. Make sure that the `DRY` variable in the `Makefile` is **undefined**
