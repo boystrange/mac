@@ -12,35 +12,17 @@ This is how I set up my Mac computers.
    ```bash
    mkdir GIT && cd GIT
    git clone git@github.com:boystrange/mac.git
-   cd mac/scripts
+   cd mac
    ```
-3. Copy **SSH** keys into `~/.ssh` and set up permissions.
-   ``` bash
-   ./ssh.sh
-   ```
-4. Create **symbolic links** to configuration files
-   ``` bash
-   ./links.sh
-   ```
-5. Change default shell to Bash
-   ``` bash
-   chsh -s bash
-   ```
+3. Make sure that the `DRY` variable in the `Makefile` is **undefined**
+4. Run `make`
 
-## Homebrew Formulae
+## Tips
 
-``` bash
-./formulae.sh
-```
-
-Tip: to see Homebrew formulae without incoming dependencies: `brew
+To see list Homebrew formulae without incoming dependencies: `brew
 leaves`.
 
-## App Store
-
-``` bash
-./app-store.sh
-```
+To see health of SSD: `smartctl -a /dev/disk0`
 
 ## System Settings
 
