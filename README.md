@@ -88,6 +88,12 @@ To see health of SSD: `smartctl -a /dev/disk0`
 * Change all the smart mailboxes so that messages from the Sent
   mailbox are included.
 
+## Skim Settings
+
+1. Sync
+   * Check for file changes > **ON**
+   * Reload automatically > **ON**
+
 ## INSTRUCTIONS TO BE UPDATED
 
 ## NPM
