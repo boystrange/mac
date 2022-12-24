@@ -84,7 +84,7 @@ ssh.done:
 	@echo $(PROMPT) "Setting up SSH..."
 ifndef DRY
 	@rm -rf ~/.ssh
-	@cp -r /Users/luca/Library/Mobile\ Documents/com~apple~CloudDocs/Chiavi ~/.ssh
+	@cp -r ~/Library/Mobile\ Documents/com~apple~CloudDocs/ssh ~/.ssh
 	@chmod 400 ~/.ssh/id_rsa*
 	@chmod 400 ~/.ssh/id_dsa*
 	@chmod 400 ~/.ssh/id_ed*
@@ -129,7 +129,7 @@ apps.done: $(APPS:%=app.%.done)
 link.%.done:
 	@echo $(PROMPT) "Linking" $(@:link.%.done=%) "..."
 ifndef DRY
-	@ln -s -f ~/GIT/mac/dotfiles/.$(@:link.%=%) ~/.
+	@ln -s -f ~/GIT/mac/dotfiles/.$(@:link.%.done=%) ~/.
 endif
 	@touch $@
 
@@ -152,4 +152,4 @@ endif
 
 .PHONY: all clean
 clean:
-	rm -f $(TARGETS:%=%.done)
+	rm -f *.done
