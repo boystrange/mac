@@ -60,11 +60,6 @@ To see health of SSD: `smartctl -a /dev/disk0`
 	* <kbd>⌥ Option</kbd> + <kbd>1</kbd> > **ON**
 14. Keyboard > Text Input > Edit... > Show Input menu in menu bar > **ON**
 
-## `iTerm2` Settings
-
-* Preferences > Load preferences from a custom folder or URL > **/Users/luca/GIT/mac**  
-  Quit `iTerm2` and reopen.
-
 ## Safari Settings
 
 1. Tabs > <kbd>⌘ Command</kbd> + <kbd>n</kbd> for tab switch > **OFF**
@@ -88,7 +83,16 @@ To see health of SSD: `smartctl -a /dev/disk0`
 * Change all the smart mailboxes so that messages from the Sent
   mailbox are included.
 
+## `iTerm2` Settings
+
+These should've been set automatically by the `Makefile`:
+
+* Preferences > Load preferences from a custom folder or URL > **/Users/luca/GIT/mac**  
+  Quit `iTerm2` and reopen.
+
 ## Skim Settings
+
+These should've been set automatically by the `Makefile`:
 
 1. Sync
    * Check for file changes > **ON**

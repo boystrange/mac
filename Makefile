@@ -67,6 +67,11 @@ APPS = \
   803453959  \
   $(NULL)
 
+DEFAULTS = \
+  iterm \
+  skim \
+  $(NULL)
+
 TARGETS = \
   ssh \
   links \
@@ -76,6 +81,7 @@ TARGETS = \
   taps \
   casks \
   apps \
+  defaults \
   $(NULL)
 
 all: $(TARGETS:%=%.done)
@@ -126,6 +132,9 @@ casks.done: $(CASKS:%=cask.%.done)
 apps.done: $(APPS:%=app.%.done)
 	@touch $@
 
+defaults.done: $(DEFAULTS:%=defaults.%.done)
+	@touch $@
+
 link.%.done:
 	@echo $(PROMPT) "Linking" $(@:link.%.done=%) "..."
 ifndef DRY
@@ -148,6 +157,15 @@ app.%.done:
 ifndef DRY
 	@mas install $(@:app.%.done=%)
 endif
+	@touch $@
+
+defaults.iterm.done:
+	@defaults write com.googlecode.iterm2 PrefsCustomFolder ~/GIT/mac/
+	@touch $@
+
+defaults.skim.done:
+	@defaults write net.sourceforge.skim-app.skim SKAutoCheckFileUpdate -bool true
+	@defaults write net.sourceforge.skim-app.skim SKAutoReloadFileUpdate -bool true
 	@touch $@
 
 .PHONY: all clean
