@@ -25,10 +25,7 @@ export PS1="[\[$promptcolor\]\u@\h\[$reset\]:\W] "
 
 export LANG=en_US.UTF-8
 export EDITOR=vim
-export PATH=~/.local/bin:$PATH
 export PATH=/usr/local/opt/openjdk/bin:$PATH
-export PATH=/usr/local/sbin:$PATH
-export NODE_PATH=/usr/local/lib/node_modules
 
 # Disable annoying message (in Catalina) warning about the
 # deprecated Bash shell

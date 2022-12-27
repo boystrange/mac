@@ -97,19 +97,3 @@ These should've been set automatically by the `Makefile`:
 1. Sync
    * Check for file changes > **ON**
    * Reload automatically > **ON**
-
-## INSTRUCTIONS TO BE UPDATED
-
-## NPM
-
-``` bash
-npm install -g less
-npm install -g less-plugin-clean-css
-npm install -g puppeteer-core
-```
-
-Some useful commands:
-
-* To **uninstall** modules: `npm uninstall -g <nome modulo>`
-* To see list of installed modules: `npm list -g --depth 0`
-* To **upgrade** modules: `npm upgrade -g`
