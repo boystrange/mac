@@ -25,6 +25,7 @@ export PS1="[\[$promptcolor\]\u@\h\[$reset\]:\W] "
 
 export LANG=en_US.UTF-8
 export EDITOR=vim
+export PATH=/usr/local/sbin:$PATH
 export PATH=/usr/local/opt/openjdk/bin:$PATH
 
 # Disable annoying message (in Catalina) warning about the
