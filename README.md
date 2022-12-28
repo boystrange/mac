@@ -58,7 +58,11 @@ To see health of SSD: `smartctl -a /dev/disk0`
 	* <kbd>⌃ Control</kbd> + <kbd>↑</kbd> > **OFF**
 	* <kbd>⌃ Control</kbd> + <kbd>↓</kbd> > **OFF**
 	* <kbd>⌥ Option</kbd> + <kbd>1</kbd> > **ON**
-14. Keyboard > Text Input > Edit... > Show Input menu in menu bar > **ON**
+14. Keyboard > Text Input > Edit...
+    * Show Input menu in menu bar > **ON**
+	* Correct spelling automatically > **OFF**
+	* Capitalize words automatically > **OFF**
+	* Add period with double-space > **OFF**
 
 ## Safari Settings
 
