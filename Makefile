@@ -84,9 +84,9 @@ TARGETS = \
   defaults \
   $(NULL)
 
-all: $(TARGETS:%=%.done)
+all: $(TARGETS:%=done/%)
 
-ssh.done:
+done/ssh:
 	@echo $(PROMPT) "Setting up SSH..."
 ifndef DRY
 	@rm -rf ~/.ssh
@@ -100,25 +100,25 @@ ifndef DRY
 endif
 	@touch $@
 
-links.done: $(DOTFILES:%=link.%.done)
+done/links: $(DOTFILES:%=done/link.%)
 	@touch $@
 
-shell.done:
+done/shell:
 	@echo $(PROMPT) "Setting default shell to bash"
 ifndef DRY
 	@chsh -s /bin/bash
 endif
 	@touch $@
 
-formulae.done: $(FORMULAE:%=formula.%.done)
+done/formulae: $(FORMULAE:%=done/formula.%)
 	@touch $@
 
-unlink-emacs.done:
+done/unlink-emacs:
 	@echo $(PROMPT) "Unlinking emacs (Agda dependency) to avoid conflicts with emacs-mac"
 	@brew unlink $(BREW_DRY) emacs
 	@touch $@
 
-taps.done:
+done/taps:
 	@echo $(PROMPT) "Adding taps..."
 ifndef DRY
 	@brew tap railwaycat/emacsmacport
@@ -126,48 +126,46 @@ ifndef DRY
 endif
 	@touch $@
 
-casks.done: $(CASKS:%=cask.%.done)
+done/casks: $(CASKS:%=done/cask.%)
 	@touch $@
 
-apps.done: $(APPS:%=app.%.done)
+done/apps: $(APPS:%=done/app.%)
 	@touch $@
 
-defaults.done: $(DEFAULTS:%=defaults.%.done)
+done/defaults: $(DEFAULTS:%=done/defaults.%)
 	@touch $@
 
-link.%.done:
-	@echo $(PROMPT) "Linking" $(@:link.%.done=%) "..."
+done/link.%:
+	@echo $(PROMPT) "Linking" $(@:done/link.%=%) "..."
 ifndef DRY
-	@ln -s -f ~/GIT/mac/dotfiles/.$(@:link.%.done=%) ~/.
+	@ln -s -f ~/GIT/mac/dotfiles/.$(@:done/link.%=%) ~/.
 endif
 	@touch $@
 
-formula.%.done:
-	@echo $(PROMPT) "Installing formula" $(@:formula.%.done=%) "..."
-	@brew install $(BREW_DRY) $(@:formula.%.done=%)
+done/formula.%:
+	@echo $(PROMPT) "Installing formula" $(@:done/formula.%=%) "..."
+	@brew install $(BREW_DRY) $(@:done/formula.%=%)
 	@touch $@
 
-cask.%.done:
-	@echo $(PROMPT) "Installing cask" $(@:cask.%.done=%) "..."
-	@brew install $(BREW_DRY) --cask $(@:cask.%.done=%)
+done/cask.%:
+	@echo $(PROMPT) "Installing cask" $(@:done/cask.%=%) "..."
+	@brew install $(BREW_DRY) --cask $(@:done/cask.%=%)
 	@touch $@
 
-app.%.done:
-	@echo $(PROMPT) "Installing app" `mas info $(@:app.%.done=%) | head -1` "..."
+done/app.%:
+	@echo $(PROMPT) "Installing app" `mas info $(@:done/app.%=%) | head -1` "..."
 ifndef DRY
-	@mas install $(@:app.%.done=%)
+	@mas install $(@:done/app.%=%)
 endif
 	@touch $@
 
-defaults.iterm.done:
+done/defaults.iterm:
 	@defaults write com.googlecode.iterm2 PrefsCustomFolder ~/GIT/mac/
 	@touch $@
 
-defaults.skim.done:
+done/defaults.skim:
 	@defaults write net.sourceforge.skim-app.skim SKAutoCheckFileUpdate -bool true
 	@defaults write net.sourceforge.skim-app.skim SKAutoReloadFileUpdate -bool true
 	@touch $@
 
-.PHONY: all clean
-clean:
-	rm -f *.done
+.PHONY: all
