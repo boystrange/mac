@@ -27,9 +27,8 @@ To see health of SSD: `smartctl -a /dev/disk0`
 ## System Settings
 
 1. General > About > Name > **SET COMPUTER NAME**  
-   My computers and devices are named after a **moon** in the solar
-   system. Pick a name from [this
-   list](https://en.wikipedia.org/wiki/List_of_natural_satellites)
+   My computers and devices are named after a [**moon** of the solar
+   system](https://en.wikipedia.org/wiki/List_of_natural_satellites).
 2. General > Sharing
    * Remote Login > **ON**
    * Remote Management > **ON**
