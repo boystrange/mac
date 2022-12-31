@@ -1,7 +1,6 @@
+DRY = true
 
 NULL =
-
-DRY = true
 
 ifdef DRY
 BREW_DRY = -n
@@ -51,6 +50,7 @@ DOTFILES = \
   profile \
   vimrc \
   zshrc \
+  agda \
   $(NULL)
 
 # Telegram
