@@ -1,3 +1,8 @@
+# Global
+*~
+*.swp
+.DS_Store
+# LaTeX
 *.aux
 *.log
 *.nav
@@ -12,3 +17,11 @@
 *.fls
 *.synctex.gz
 *.fdb_latexmk
+# OCaml
+*.opt
+*.o
+*.cmi
+*.cmo
+*.cmx
+# Haskell
+*.hi

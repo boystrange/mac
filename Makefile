@@ -1,4 +1,4 @@
-DRY = true
+#DRY = true
 
 NULL =
 
@@ -51,6 +51,7 @@ DOTFILES = \
   vimrc \
   zshrc \
   agda \
+  gitignore_global \
   $(NULL)
 
 # Telegram

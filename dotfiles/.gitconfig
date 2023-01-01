@@ -2,3 +2,5 @@
 [user]
 	name = Luca Padovani
 	email = luca.padovani@unicam.it
+[core]
+	excludesfile = ~/.gitignore_global
