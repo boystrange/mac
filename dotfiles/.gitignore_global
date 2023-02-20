@@ -12,7 +12,6 @@
 *.vrb
 *.bbl
 *.blg
-*.pdf
 *.spl
 *.fls
 *.synctex.gz
