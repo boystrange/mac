@@ -65,6 +65,8 @@ To see health of SSD: `smartctl -a /dev/disk0`
 	* Correct spelling automatically > **OFF**
 	* Capitalize words automatically > **OFF**
 	* Add period with double-space > **OFF**
+15. Keyboard > Dictation > Shortcut
+    * Disable if possible of choose the key with microphone
 
 ## Safari Settings
 
