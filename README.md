@@ -79,6 +79,7 @@ To see health of SSD: `smartctl -a /dev/disk0`
 1. General
    * New messages sound > **None**
    * Play sounds for other mail actions > **OFF**
+   * Enable message follow up suggestions > **OFF**
    * Prefer opening messages in Split View when in full screen > **OFF**
 2. Viewing
    * Show most recent message at the top > **ON**
