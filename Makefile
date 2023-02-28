@@ -57,15 +57,15 @@ DOTFILES = \
 # Telegram
 # Whatsapp Desktop
 # Wipr
-# Notability
 # Slack for Desktop
+# GoodNotes
 
 APPS = \
   747648890  \
   1147396723 \
   1320666476 \
-  360593530  \
   803453959  \
+  1444383602 \
   $(NULL)
 
 DEFAULTS = \
