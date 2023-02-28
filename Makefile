@@ -59,6 +59,7 @@ DOTFILES = \
 # Wipr
 # Slack for Desktop
 # GoodNotes
+# Bitwarden
 
 APPS = \
   747648890  \
@@ -66,6 +67,7 @@ APPS = \
   1320666476 \
   803453959  \
   1444383602 \
+  1352778147 \
   $(NULL)
 
 DEFAULTS = \
