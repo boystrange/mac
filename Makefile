@@ -52,6 +52,7 @@ DOTFILES = \
   zshrc \
   agda \
   gitignore_global \
+  siril \
   $(NULL)
 
 # Telegram

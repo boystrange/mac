@@ -418,7 +418,7 @@
  '(custom-safe-themes
    '("1f82b7df8a4ce0e2ba3b0217d2c552b2fe5b5dd1244481cb65bef733f9818c63" "383bbe6c33de0f8b5f90e7b487e0f45cd5331ba72c3e1fa62d0dec4204329a4a" "b39e101fb7ff65e46374e9f7b81ba8479690a8950597a50dd0a22bc0b1d06d9e" "594df9401f0f37916120d7afe00bd7cc80025eb548cf1e19075ce3845b2f84ae" "3380a2766cf0590d50d6366c5a91e976bdc3c413df963a0ab9952314b4577299" default))
  '(package-selected-packages
-   '(fsharp-mode go-mode yaml-mode exec-path-from-shell rich-minority heaven-and-hell use-package base16-theme markdown-mode smooth-scrolling wc-mode haskell-mode auctex)))
+   '(go-mode yaml-mode exec-path-from-shell rich-minority heaven-and-hell use-package base16-theme markdown-mode smooth-scrolling wc-mode haskell-mode auctex)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
