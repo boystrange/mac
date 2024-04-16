@@ -14,6 +14,7 @@ FORMULAE = \
   multimarkdown \
   node \
   wget \
+  pandoc \
   watchexec \
   graphviz \
   ghc \
