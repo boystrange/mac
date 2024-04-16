@@ -32,7 +32,6 @@ CASKS = \
   emacs-mac \
   mactex \
   skim \
-  webex-meetings \
   firefox \
   google-chrome \
   google-drive \
