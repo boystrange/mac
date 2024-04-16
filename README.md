@@ -30,8 +30,8 @@ To see health of SSD: `smartctl -a /dev/disk0`
    Each of my computers and devices is named after a [**moon** of the solar
    system](https://en.wikipedia.org/wiki/List_of_natural_satellites).
 2. General > Sharing
-   * Remote Login > **ON**
    * Remote Management > **ON**
+   * Remote Login > **ON**
 3. Appearance
    * Accent color > **Graphite**
    * Highlight color > **Graphite**
@@ -49,7 +49,7 @@ To see health of SSD: `smartctl -a /dev/disk0`
    * Ask Siri > **OFF**
    * Spotlight > Siri Suggestions > **OFF**
 8. Desktop & Dock
-   * Show recent applications in Dock > **OFF**
+   * Show suggested and recent apps in Dock > **OFF**
 9. Displays > Night Shift... > Schedule > **Sunset to sunrise**
 10. Game Center > Game Center > **OFF**
 11. Keyboard
@@ -72,14 +72,14 @@ To see health of SSD: `smartctl -a /dev/disk0`
 
 1. Tabs > <kbd>⌘ Command</kbd> + <kbd>n</kbd> for tab switch > **OFF**
 2. Extensions > Wipr Part 1/2/3 > **ON**
-3. Advanced > Show Develop menu in menu bar > **ON**
+3. Advanced > Show features for web developers > **ON**
 
 ## Mail Settings
 
 1. General
    * New messages sound > **None**
    * Play sounds for other mail actions > **OFF**
-   * Enable message follow up suggestions > **OFF**
+   * Follow Up Suggestions > **OFF**
    * Prefer opening messages in Split View when in full screen > **OFF**
 2. Viewing
    * Show most recent message at the top > **ON**
