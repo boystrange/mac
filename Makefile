@@ -11,8 +11,6 @@ endif
 PROMPT = "==>"
 
 FORMULAE = \
-  multimarkdown \
-  node \
   wget \
   pandoc \
   watchexec \
@@ -22,7 +20,6 @@ FORMULAE = \
   haskell-stack \
   agda \
   csvkit \
-  poppler \
   java \
   smartmontools \
   mas \
