@@ -29,7 +29,6 @@ CASKS = \
   iterm2 \
   emacs-mac \
   mactex \
-  skim \
   firefox \
   google-chrome \
   google-drive \
@@ -53,15 +52,11 @@ DOTFILES = \
   $(NULL)
 
 # Amphetamine
-# Telegram
-# Whatsapp Desktop
 # Wipr
 # Slack for Desktop
 
 APPS = \
   937984704 \
-  747648890  \
-  1147396723 \
   1320666476 \
   803453959  \
   $(NULL)
