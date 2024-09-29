@@ -28,7 +28,6 @@ export EDITOR=vim
 export PATH=~/.local/bin:$PATH
 export PATH=/opt/homebrew/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
-#export PATH=/usr/local/opt/openjdk/bin:$PATH
 export PATH=/opt/homebrew/opt/openjdk/bin:$PATH
 
 # Disable annoying message (in Catalina) warning about the
