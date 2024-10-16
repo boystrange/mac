@@ -72,36 +72,27 @@
 
 (defconst default-font-size
   (cond
-    ((string-prefix-p "iperione" system-name) 16) ;; laptop => small screen
+    ((string-prefix-p "gerd" system-name) 16) ;; laptop => small screen
     ((string-prefix-p "titan" system-name) 16) ;; close screen
     ((string-prefix-p "oberon" system-name) 18) ;; office => big screen
     (t 18)
   )
 )
 
-(defconst default-font
-  (font-spec :family "DejaVu Sans Mono"
+(defconst startup-font
+  (font-spec :family "Iosevka"
              :size default-font-size
              :weight 'normal
              :width 'normal) 
 )
-
-(defconst startup-font
-  (font-spec :family "Fira Code"
-             :size default-font-size
-             :weight 'light
-             :width 'normal) 
-)
-
-(let ((my-font "DejaVu Sans Mono"))
-  (set-fontset-font "fontset-default" '(#x000000 . #x3FFFFF) default-font)
-  (set-fontset-font "fontset-startup" '(#x000000 . #x3FFFFF) startup-font))
 
 (if (eq system-type 'darwin)
   (progn
     (mac-auto-operator-composition-mode t)
     (setq mac-mouse-wheel-smooth-scroll nil))
 )
+
+(set-fontset-font "fontset-startup" '(#x000000 . #x3FFFFF) startup-font)
 
 (add-to-list 'default-frame-alist '(height . 40))
 (add-to-list 'default-frame-alist '(width . 80))
@@ -115,13 +106,6 @@
 
 (global-set-key (kbd "<M-up>") 'text-scale-increase)
 (global-set-key (kbd "<M-down>") 'text-scale-decrease)
-
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;; FIRA CODE LIGATURES ;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
-
-;;(try-load "~/GIT/fira-code-emacs/fira-code.el")
-;;(add-hook 'prog-mode-hook 'fira-code-mode)
 
 ;;
 ;; GUI
