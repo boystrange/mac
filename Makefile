@@ -30,12 +30,9 @@ CASKS = \
   emacs-mac \
   mactex \
   firefox \
-  google-chrome \
-  google-drive \
   visual-studio-code \
   stats \
-  font-dejavu \
-  font-fira-code \
+  font-iosevka \
   $(NULL)
 
 DOTFILES = \
