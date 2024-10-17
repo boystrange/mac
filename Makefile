@@ -12,16 +12,11 @@ PROMPT = "==>"
 
 FORMULAE = \
   wget \
-  pandoc \
   watchexec \
   graphviz \
-  ghc \
-  cabal-install \
-  haskell-stack \
   agda \
   csvkit \
   java \
-  smartmontools \
   mas \
   $(NULL)
 
