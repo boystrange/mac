@@ -28,6 +28,8 @@ CASKS = \
   visual-studio-code \
   stats \
   font-iosevka \
+  skim \
+  onedrive \
   $(NULL)
 
 DOTFILES = \
@@ -108,7 +110,6 @@ done/taps:
 	@echo $(PROMPT) "Adding taps..."
 ifndef DRY
 	@brew tap railwaycat/emacsmacport
-	@brew tap homebrew/cask-fonts
 endif
 	@touch $@
 
