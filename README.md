@@ -60,7 +60,7 @@ To see health of SSD: `smartctl -a /dev/disk0`
 	* <kbd>⌃ Control</kbd> + <kbd>↑</kbd> > **OFF**
 	* <kbd>⌃ Control</kbd> + <kbd>↓</kbd> > **OFF**
 	* <kbd>⌥ Option</kbd> + <kbd>1</kbd> > **ON**
-14. Keyboard > Keyboard Shortcuts... > Mission Control
+14. Keyboard > Keyboard Shortcuts... > Input Sources
 	* <kbd>⌃ Control</kbd> + <kbd>Space</kbd> > **OFF**
 	* <kbd>⌃ Control</kbd> + <kbd>Option</kbd> + <kbd>Space</kbd> > **OFF**
 14. Keyboard > Text Input > Edit...
@@ -68,12 +68,10 @@ To see health of SSD: `smartctl -a /dev/disk0`
 	* Correct spelling automatically > **OFF**
 	* Capitalize words automatically > **OFF**
 	* Add period with double-space > **OFF**
-15. Keyboard > Dictation > Shortcut
-    * Disable if possible of choose the key with microphone
 
 ## Safari Settings
 
-1. Tabs > <kbd>⌘ Command</kbd> + <kbd>n</kbd> for tab switch > **OFF**
+1. Tabs > Use <kbd>⌘ Command</kbd> + <kbd>n</kbd> to switch tabs > **OFF**
 2. Extensions > Wipr Part 1/2/3 > **ON**
 3. Advanced > Show features for web developers > **ON**
 
@@ -89,11 +87,7 @@ To see health of SSD: `smartctl -a /dev/disk0`
 
 ## Mail Sidebar
 
-* Add **All Junk**, **All Trash**, **All Archive** to favorite mailboxes.
-* Change the "Today" smart mailbox so that only messages
-  **received** today (and not messages **viewed** today) are shown.
-* Change all the smart mailboxes so that messages from the Sent
-  mailbox are included.
+* Add **All Junk**, **All Trash**, **All Archive**, **All Drafts** to favorite mailboxes.
 
 ## `iTerm2` Settings
 
@@ -101,11 +95,3 @@ These should've been set automatically by the `Makefile`:
 
 * Preferences > Load preferences from a custom folder or URL > **/Users/luca/GIT/mac**  
   Quit `iTerm2` and reopen.
-
-## Skim Settings
-
-These should've been set automatically by the `Makefile`:
-
-1. Sync
-   * Check for file changes > **ON**
-   * Reload automatically > **ON**

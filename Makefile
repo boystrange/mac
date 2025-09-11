@@ -47,12 +47,10 @@ DOTFILES = \
 
 # Amphetamine
 # Wipr
-# Slack for Desktop
 
 APPS = \
   937984704 \
   1320666476 \
-  803453959  \
   $(NULL)
 
 DEFAULTS = \
@@ -65,7 +63,6 @@ TARGETS = \
   links \
   shell \
   formulae \
-  unlink-emacs \
   taps \
   casks \
   apps \
