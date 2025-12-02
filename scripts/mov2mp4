@@ -1,0 +1,2 @@
+#/bin/sh
+ffmpeg -i $* -vcodec h264 -acodec aac $*.mp4

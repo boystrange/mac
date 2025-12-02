@@ -25,9 +25,9 @@ export PS1="[\[$promptcolor\]\u@\h\[$reset\]:\W] "
 
 export LANG=en_US.UTF-8
 export EDITOR=vim
+export PATH=~/GIT/mac/scripts:$PATH
 export PATH=~/.local/bin:$PATH
 export PATH=/opt/homebrew/bin:$PATH
-export PATH=/usr/local/sbin:$PATH
 export PATH=/opt/homebrew/opt/openjdk/bin:$PATH
 
 # Disable annoying message (in Catalina) warning about the
@@ -39,7 +39,6 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 ###########
 
 alias ls='ls --color'
-alias ll='ls -l'
 
 #######
 # GIT #
