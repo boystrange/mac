@@ -72,9 +72,7 @@
 
 (defconst default-font-size
   (cond
-    ((string-prefix-p "gerd" system-name) 16) ;; laptop => small screen
-    ((string-prefix-p "titan" system-name) 16) ;; close screen
-    ((string-prefix-p "oberon" system-name) 18) ;; office => big screen
+    ((member "--big" command-line-args) 32)
     (t 18)
   )
 )
