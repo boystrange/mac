@@ -76,6 +76,7 @@
     (t 18)
   )
 )
+(setq command-line-args (delete "--big" command-line-args))
 
 (defconst startup-font
   (font-spec :family "Iosevka"
