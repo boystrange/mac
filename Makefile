@@ -22,7 +22,6 @@ FORMULAE = \
 
 CASKS = \
   iterm2 \
-  emacs-mac \
   mactex \
   firefox \
   visual-studio-code \
@@ -63,7 +62,6 @@ TARGETS = \
   links \
   shell \
   formulae \
-  taps \
   casks \
   apps \
   defaults \
@@ -101,13 +99,6 @@ done/formulae: $(FORMULAE:%=done/formula.%)
 done/unlink-emacs:
 	@echo $(PROMPT) "Unlinking emacs (Agda dependency) to avoid conflicts with emacs-mac"
 	@brew unlink $(BREW_DRY) emacs
-	@touch $@
-
-done/taps:
-	@echo $(PROMPT) "Adding taps..."
-ifndef DRY
-	@brew tap railwaycat/emacsmacport
-endif
 	@touch $@
 
 done/casks: $(CASKS:%=done/cask.%)
