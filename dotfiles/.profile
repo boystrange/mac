@@ -29,6 +29,7 @@ export PATH=~/GIT/mac/scripts:$PATH
 export PATH=~/.local/bin:$PATH
 export PATH=/opt/homebrew/bin:$PATH
 export PATH=/opt/homebrew/opt/openjdk/bin:$PATH
+export PATH=/opt/homebrew/opt/ruby/bin:$PATH
 
 # Disable annoying message (in Catalina) warning about the
 # deprecated Bash shell
