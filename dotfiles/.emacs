@@ -1,3 +1,8 @@
+;;; ...  -*- lexical-binding: t -*-
+(add-to-list 'warning-suppress-types '(files missing-lexbind-cookie))
+
+(require 'comp)
+(setq native-comp-driver-options (cons "-mmacosx-version-min=11" native-comp-driver-options))
 
 ;;
 ;; AUXILIARY DEFINITIONS
@@ -88,7 +93,7 @@
 
 (if (eq system-type 'darwin)
   (progn
-    (mac-auto-operator-composition-mode t)
+    ;;(mac-auto-operator-composition-mode t)
     (setq mac-mouse-wheel-smooth-scroll nil))
 )
 

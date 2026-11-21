@@ -39,6 +39,7 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 ###########
 
 alias ls='ls --color'
+alias ll='ls -l'
 
 #######
 # GIT #
